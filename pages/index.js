@@ -1,4 +1,5 @@
 import useSWR from "swr";
+import ArtPieces from "@/Components/ArtPieces";
 
 export default function HomePage() {
   const { data, error, isLoading, mutate } = useSWR(
@@ -12,11 +13,7 @@ export default function HomePage() {
 
   return (
     <main>
-      <ArtPieces
-        image={data.imageSource}
-        title={data.name}
-        artist={data.artist}
-      />
+      <ArtPieces data={data} />
     </main>
   );
 }
