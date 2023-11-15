@@ -1,4 +1,5 @@
 import Image from "next/image";
+import FavoriteButton from "../FavoriteButton";
 
 export default function ArtPieceDetails({ image, title, artist, year, genre }) {
   return (

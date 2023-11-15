@@ -27,7 +27,7 @@ export default function App({ Component, pageProps }) {
       }
 
       // if the isFav is not in the state, add it with isFav set to true
-      return [...artPiecesInfo, { slug, isFav: false }];
+      return [...artPiecesInfo, { slug, isFav: true }];
     });
   }
 
