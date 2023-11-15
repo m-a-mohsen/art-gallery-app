@@ -1,8 +1,12 @@
 import Spotlight from "@/Components/Spotlight";
+import pickRandomItem from "@/utils/random";
 
-export default function spotlight() {
-    const spotlightArtPiece = 
+export default function SpotlightPage({ pieces }) {
+  console.log(pieces);
+  const randomArt = pickRandomItem(pieces);
   return (
-      <Spotlight image={ imageUrl} title={ title } />
-  )
+    <main>
+      <Spotlight image={randomArt.imageSource} artist={randomArt.artist} />
+    </main>
+  );
 }
