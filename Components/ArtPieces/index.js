@@ -7,6 +7,7 @@ export default function ArtPieces({ data }) {
         <li key={slug}>
           <div key={name}>{name}</div>
           <div>{artist}</div>
+          <Image src={imageSource} alt={name} width={312} height={312} />
         </li>
       ))}
     </>
