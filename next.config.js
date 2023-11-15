@@ -17,6 +17,9 @@ const nextConfig = {
 
     return config;
   },
+  images: {
+    domains: ["example-apis.vercel.app"],
+  },
 };
 
 module.exports = nextConfig;
