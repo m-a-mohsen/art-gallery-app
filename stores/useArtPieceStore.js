@@ -44,19 +44,19 @@ export const useArtPieceStore = create(() => ({
 
 
 
-// export const useLightsStore = create((set, get) => ({
-//     lights: initialLights,
-//     switches: [],
-//     numOfSwitchedOnLights: () => get().lights.reduce((prev, curr) => prev + (curr.isOn ? 1 : 0), 0),
-//     handleToggle: (lightId) => set(state => ({
-//         lights: produce(state.lights, draft => {
-//             const light = draft.find(light => light.id === lightId)
-//             light.isOn = !light.isOn
-//         })
-//     })),
-//     switchAllLights: (shouldSwitchOn) => set(state => ({
-//         lights: produce(state.lights, draft => {
-//             draft.forEach(light => light.isOn = shouldSwitchOn)
-//         })
-//     }))
-// }))
+export const useLightsStore = create((set, get) => ({
+    lights: initialLights,
+    switches: [],
+    numOfSwitchedOnLights: () => get().lights.reduce((prev, curr) => prev + (curr.isOn ? 1 : 0), 0),
+    handleToggle: (lightId) => set(state => ({
+        lights: produce(state.lights, draft => {
+            const light = draft.find(light => light.id === lightId)
+            light.isOn = !light.isOn
+        })
+    })),
+    switchAllLights: (shouldSwitchOn) => set(state => ({
+        lights: produce(state.lights, draft => {
+            draft.forEach(light => light.isOn = shouldSwitchOn)
+        })
+    }))
+}))
