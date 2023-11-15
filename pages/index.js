@@ -13,7 +13,7 @@ export default function HomePage() {
 
   return (
     <main>
-      <ArtPieces data={data} />
+      <ArtPieces pieces={data} />
     </main>
   );
 }

@@ -48,16 +48,16 @@ Download and extract the [Resources](#resources) into your project folder.
 
 #### Acceptance Criteria
 
-- [ ] All art pieces are displayed as a list 🖼️
-- [ ] Each art piece's image is displayed 🖼️
-- [ ] Each art piece's title is displayed 🖼️
-- [ ] Each art piece's artist is displayed 🖼️
+- [x] All art pieces are displayed as a list 🖼️
+- [x] Each art piece's image is displayed 🖼️
+- [x] Each art piece's title is displayed 🖼️
+- [x] Each art piece's artist is displayed 🖼️
 
 #### Tasks
 
-- [ ] Fetch all art pieces with `SWR` in `pages/index.js`
-- [ ] Create the component `ArtPieces` to render a list
-- [ ] `ArtPieces` props: `pieces`
+- [x] Fetch all art pieces with `SWR` in `pages/index.js`
+- [x] Create the component `ArtPieces` to render a list
+- [x] `ArtPieces` props: `pieces`
 - [ ] Create the component `ArtPiecePreview`
 - [ ] `ArtPiecePreview` props: `image`, `title`, `artist`
 - [ ] All acceptance criteria marked with 🖼️ are covered by component testing
