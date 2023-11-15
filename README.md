@@ -82,9 +82,9 @@ Download and extract the [Resources](#resources) into your project folder.
 
 #### Tasks
 
-- [ ] Write function to pick one art piece [at random](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random#examples)
-- [ ] Create the component `Spotlight`
-- [ ] `Spotlight` props: `image`, `artist`
+- [x] Write function to pick one art piece [at random](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random#examples)
+- [x] Create the component `Spotlight`
+- [x] `Spotlight` props: `image`, `artist`
 - [ ] All acceptance criteria marked with 🖼️ are covered by component testing
 
 ---
