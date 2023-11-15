@@ -1,9 +1,7 @@
 import Spotlight from "@/Components/Spotlight";
+import pickRandomItem from "@/utils/random";
 
-export default function SpotlightPage({ pieces }) {
-  return (
-    <main>
-      <Spotlight image={pieces.imageSource} artist={pieces.artist} />
-    </main>
-  );
+export default function Page({  }) {
+
+  return 
 }
