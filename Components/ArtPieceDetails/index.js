@@ -2,6 +2,7 @@ import Image from "next/image";
 import FavoriteButton from "../FavoriteButton";
 import Link from "next/link";
 import CommentForm from "../CommentForm";
+import { useState } from "react";
 
 export default function ArtPieceDetails({
   image,
@@ -13,6 +14,11 @@ export default function ArtPieceDetails({
   artPiecesInfo,
   onToggleFavorite,
 }) {
+  const [comments, setComments] = useState();
+
+  function handleAddComment(newComment) {
+    setComments(newComment);
+  }
   return (
     <>
       <Image src={image} alt={title} width={312} height={312} />
@@ -26,7 +32,7 @@ export default function ArtPieceDetails({
         onToggleFavorite={onToggleFavorite}
         slug={slug}
       />
-      <CommentForm />
+      <CommentForm comments={comments} onAddComment={handleAddComment} />
     </>
   );
 }
