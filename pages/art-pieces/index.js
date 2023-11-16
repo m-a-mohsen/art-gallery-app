@@ -1,7 +1,7 @@
 import ArtPieces from "@/Components/ArtPieces";
 
 export default function ArtPiecesPage({
-  onToggleFaFavorite,
+  onToggleFavorite,
   artPiecesInfo,
   pieces,
 }) {
@@ -9,7 +9,7 @@ export default function ArtPiecesPage({
     <main>
       <ArtPieces
         pieces={pieces}
-        onToggleFavorite={onToggleFaFavorite}
+        onToggleFavorite={onToggleFavorite}
         artPiecesInfo={artPiecesInfo}
       />
     </main>
