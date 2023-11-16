@@ -14,6 +14,7 @@ export default function SpotlightPage({
       <Spotlight
         image={randomArt.imageSource}
         artist={randomArt.artist}
+        slug={randomArt.slug}
         artPiecesInfo={artPiecesInfo}
         onToggleFavorite={onToggleFavorite}
       />

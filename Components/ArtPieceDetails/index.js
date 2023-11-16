@@ -8,6 +8,7 @@ export default function ArtPieceDetails({
   artist,
   year,
   genre,
+  slug,
   artPiecesInfo,
   onToggleFavorite,
 }) {
@@ -22,6 +23,7 @@ export default function ArtPieceDetails({
       <FavoriteButton
         artPiecesInfo={artPiecesInfo}
         onToggleFavorite={onToggleFavorite}
+        slug={slug}
       />
     </>
   );
