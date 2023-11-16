@@ -11,6 +11,7 @@ export default function ArtPieces({ pieces, artPiecesInfo, onToggleFavorite }) {
             title={piece.name}
             image={piece.imageSource}
             artist={piece.artist}
+            slug={piece.slug}
             artPiecesInfo={artPiecesInfo}
             onToggleFavorite={onToggleFavorite}
           />

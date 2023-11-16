@@ -58,8 +58,8 @@ Download and extract the [Resources](#resources) into your project folder.
 - [x] Fetch all art pieces with `SWR` in `pages/index.js`
 - [x] Create the component `ArtPieces` to render a list
 - [x] `ArtPieces` props: `pieces`
-- [ ] Create the component `ArtPiecePreview`
-- [ ] `ArtPiecePreview` props: `image`, `title`, `artist`
+- [x] Create the component `ArtPiecePreview`
+- [x] `ArtPiecePreview` props: `image`, `title`, `artist`
 - [ ] All acceptance criteria marked with 🖼️ are covered by component testing
 
 ---
@@ -142,11 +142,11 @@ Download and extract the [Resources](#resources) into your project folder.
 
 #### Tasks
 
-- [x] Create the component `ArtPieceDetails`
-- [x] `ArtPieceDetails` props: `image`, `title`, `artist`, `year`, `genre`
-- [x] Create the page `pages/art-pieces/[slug]` that renders `ArtPieceDetails`
-- [x] Read the query parameter `slug` from `next/router`
-- [x] Use the `slug` to find the art piece to display
+- [ ] Create the component `ArtPieceDetails`
+- [ ] `ArtPieceDetails` props: `image`, `title`, `artist`, `year`, `genre`
+- [ ] Create the page `pages/art-pieces/[slug]` that renders `ArtPieceDetails`
+- [ ] Read the query parameter `slug` from `next/router`
+- [ ] Use the `slug` to find the art piece to display
 - [ ] All acceptance criteria marked with 🖼️ are covered by component testing
 
 ---
