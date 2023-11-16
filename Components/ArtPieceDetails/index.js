@@ -13,6 +13,7 @@ export default function ArtPieceDetails({
   slug,
   artPiecesInfo,
   onToggleFavorite,
+  colors
 }) {
   const [comments, setComments] = useState();
 
@@ -26,6 +27,9 @@ export default function ArtPieceDetails({
       <div>{artist}</div>
       <div>{year}</div>
       <div>{genre}</div>
+      {colors.map((color) => {
+        return <div style={{ backgroundColor: color }}>{color}</div>;
+      })}
       <Link href="/art-pieces">Back to list</Link>
       <FavoriteButton
         artPiecesInfo={artPiecesInfo}

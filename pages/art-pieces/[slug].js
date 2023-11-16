@@ -16,7 +16,7 @@ export default function ArtPiecesDetailsPage({
 
   const router = useRouter();
   const clickedImageSlug = router.query.slug;
-  const { imageSource, name, artist, year, genre, slug } = data.find(
+  const { imageSource, name, artist, year, genre, slug, colors } = data.find(
     (item) => item.slug === clickedImageSlug
   );
   console.log(imageSource);
@@ -31,6 +31,7 @@ export default function ArtPiecesDetailsPage({
       year={year}
       genre={genre}
       slug={slug}
+      colors={colors}
     />
   );
 }
