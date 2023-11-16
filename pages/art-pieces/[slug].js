@@ -14,7 +14,7 @@ export default function ArtPiecesDetails() {
     const clickedImageSlug = router.query.slug;
     // change hard coded slug later
     const { imageSource, name, artist, year, genre } = data.find(
-      (item) => item.slug === "body-of-water"
+      (item) => item.slug === clickedImageSlug
     );
     console.log(imageSource)
 
