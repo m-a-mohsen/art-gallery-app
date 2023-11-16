@@ -1,4 +1,5 @@
 export default function FavoriteButton({ artPiecesInfo, onToggleFavorite }) {
+  console.log(onToggleFavorite);
   const { isFav } = artPiecesInfo.find(
     (info) => info.slug === artPiecesInfo.slug
   ) ?? {

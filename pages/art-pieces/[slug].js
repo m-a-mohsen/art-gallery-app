@@ -2,7 +2,7 @@ import useSWR from "swr";
 import ArtPieceDetails from "@/Components/ArtPieceDetails";
 import { useRouter } from "next/router";
 
-export default function ArtPiecesDetails() {
+export default function ArtPiecesDetails({ onToggleFavorite, artPiecesInfo }) {
   const { data, error, isLoading, mutate } = useSWR(
     "https://example-apis.vercel.app/api/art"
   );

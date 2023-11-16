@@ -20,7 +20,7 @@ export default function ArtPieceDetails({
       <FavoriteButton
         artPiecesInfo={artPiecesInfo}
         onToggleFavorite={onToggleFavorite}
-      ></FavoriteButton>
+      />
     </>
   );
 }
