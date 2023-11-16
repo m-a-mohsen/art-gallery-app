@@ -76,9 +76,9 @@ Download and extract the [Resources](#resources) into your project folder.
 
 #### Acceptance Criteria
 
-- [ ] One art piece is picked at random to show as a spotlight piece
-- [ ] The art piece image is displayed 🖼️
-- [ ] The art piece artist is displayed 🖼️
+- [x] One art piece is picked at random to show as a spotlight piece
+- [x] The art piece image is displayed 🖼️
+- [x] The art piece artist is displayed 🖼️
 
 #### Tasks
 
@@ -101,20 +101,20 @@ Download and extract the [Resources](#resources) into your project folder.
 
 #### Acceptance Criteria
 
-- [ ] A navigation link labeled "Spotlight" is displayed 🖼️
-- [ ] A navigation link labeled "Pieces" is displayed 🖼️
-- [ ] Clicking "Spotlight" shows the SpotlightPage
-- [ ] Clicking "Pieces" shows the ArtPiecesPage
+- [x] A navigation link labeled "Spotlight" is displayed 🖼️
+- [x] A navigation link labeled "Pieces" is displayed 🖼️
+- [x] Clicking "Spotlight" shows the SpotlightPage
+- [x] Clicking "Pieces" shows the ArtPiecesPage
 
 #### Tasks
 
-- [ ] Move the data fetching logic to `pages/_app`
+- [x] Move the data fetching logic to `pages/_app`
 - [ ] Find a solution for global state handling to have the art pieces available on all pages
-- [ ] Adapt the page `pages/index`: rename the function to `SpotlightPage` and have it render only the `Spotlight` component
-- [ ] Create the page `pages/art-pieces/index` that renders the `ArtPieces` component
-- [ ] Create the component `Navigation` that renders all navigation links
-- [ ] Create the component `Layout` that renders the `Navigation` component
-- [ ] Apply the `Layout` component in `pages/_app`
+- [x] Adapt the page `pages/index`: rename the function to `SpotlightPage` and have it render only the `Spotlight` component
+- [x] Create the page `pages/art-pieces/index` that renders the `ArtPieces` component
+- [x] Create the component `Navigation` that renders all navigation links
+- [x] Create the component `Layout` that renders the `Navigation` component
+- [x] Apply the `Layout` component in `pages/_app`
 - [ ] All acceptance criteria marked with 🖼️ are covered by component testing
 
 ---
@@ -131,22 +131,22 @@ Download and extract the [Resources](#resources) into your project folder.
 
 #### Acceptance Criteria
 
-- [ ] Clicking an art piece from the list shows the detail page
-- [ ] The art piece image is displayed 🖼️
-- [ ] The art piece title is displayed 🖼️
-- [ ] The art piece artist is displayed 🖼️
-- [ ] The art piece year is displayed 🖼️
-- [ ] The art piece genre is displayed 🖼️
-- [ ] A back-button is displayed 🖼️
-- [ ] Clicking the back-button shows the list view
+- [x] Clicking an art piece from the list shows the detail page
+- [x] The art piece image is displayed 🖼️
+- [x] The art piece title is displayed 🖼️
+- [x] The art piece artist is displayed 🖼️
+- [x] The art piece year is displayed 🖼️
+- [x] The art piece genre is displayed 🖼️
+- [x] A back-button is displayed 🖼️
+- [x] Clicking the back-button shows the list view
 
 #### Tasks
 
-- [ ] Create the component `ArtPieceDetails`
-- [ ] `ArtPieceDetails` props: `image`, `title`, `artist`, `year`, `genre`
-- [ ] Create the page `pages/art-pieces/[slug]` that renders `ArtPieceDetails`
-- [ ] Read the query parameter `slug` from `next/router`
-- [ ] Use the `slug` to find the art piece to display
+- [x] Create the component `ArtPieceDetails`
+- [x] `ArtPieceDetails` props: `image`, `title`, `artist`, `year`, `genre`
+- [x] Create the page `pages/art-pieces/[slug]` that renders `ArtPieceDetails`
+- [x] Read the query parameter `slug` from `next/router`
+- [x] Use the `slug` to find the art piece to display
 - [ ] All acceptance criteria marked with 🖼️ are covered by component testing
 
 ---
@@ -163,21 +163,21 @@ Download and extract the [Resources](#resources) into your project folder.
 
 #### Acceptance Criteria
 
-- [ ] The favorite-button is displayed in the spotlight view 🖼️
-- [ ] The favorite-button is displayed in each entry in the list view 🖼️
-- [ ] The favorite-button is displayed in the details view 🖼️
-- [ ] Clicking the favorite-button on a non-favorite piece saves it as a favorite 🖼️
-- [ ] Clicking the favorite-button on a favorite piece removes it from favorites 🖼️
+- [x] The favorite-button is displayed in the spotlight view 🖼️
+- [x] The favorite-button is displayed in each entry in the list view 🖼️
+- [x] The favorite-button is displayed in the details view 🖼️
+- [x] Clicking the favorite-button on a non-favorite piece saves it as a favorite 🖼️
+- [x] Clicking the favorite-button on a favorite piece removes it from favorites 🖼️
 
 #### Tasks
 
-- [ ] Create an additional state `artPiecesInfo` to save further information for art pieces
-- [ ] Make the `artPiecesInfo` state globally available for all pages
-- [ ] Store the favorite flag in the `artPiecesInfo`
-- [ ] Reference art pieces by `slug` in the additional state
-- [ ] Create the component `FavoriteButton`
-- [ ] `FavoriteButton` props: `isFavorite`, `onToggleFavorite`
-- [ ] Render the `FavoriteButton` component in the `Spotlight`, `ArtPiecePreview` and `ArtPieceDetails` component
+- [x] Create an additional state `artPiecesInfo` to save further information for art pieces
+- [x] Make the `artPiecesInfo` state globally available for all pages
+- [x] Store the favorite flag in the `artPiecesInfo`
+- [x] Reference art pieces by `slug` in the additional state
+- [x] Create the component `FavoriteButton`
+- [x] `FavoriteButton` props: `isFavorite`, `onToggleFavorite`
+- [x] Render the `FavoriteButton` component in the `Spotlight`, `ArtPiecePreview` and `ArtPieceDetails` component
 - [ ] All acceptance criteria marked with 🖼️ are covered by component testing
 
 ---
@@ -194,19 +194,19 @@ Download and extract the [Resources](#resources) into your project folder.
 
 #### Acceptance Criteria
 
-- [ ] A navigation link labeled "Favorites" is displayed 🖼️
-- [ ] Clicking the "Favorites" shows the FavoritesPage
-- [ ] All favorite art pieces are displayed as a list 🖼️
-- [ ] Each art piece's image is displayed 🖼️
-- [ ] Each art piece's title is displayed 🖼️
-- [ ] Each art piece's artist is displayed 🖼️
-- [ ] Each art piece's is displayed with active favorite-button 🖼️
+- [x] A navigation link labeled "Favorites" is displayed 🖼️
+- [x] Clicking the "Favorites" shows the FavoritesPage
+- [x] All favorite art pieces are displayed as a list 🖼️
+- [x] Each art piece's image is displayed 🖼️
+- [x] Each art piece's title is displayed 🖼️
+- [x] Each art piece's artist is displayed 🖼️
+- [x] Each art piece's is displayed with active favorite-button 🖼️
 
 #### Tasks
 
-- [ ] Create the page `pages/favorites` that renders the `ArtPieces` component
-- [ ] Use data from the `artPiecesInfo` state to filter for all favorite art pieces
-- [ ] Pass the list of all favorite art pieces via prop `pieces` to the `ArtPieces` component
+- [x] Create the page `pages/favorites` that renders the `ArtPieces` component
+- [x] Use data from the `artPiecesInfo` state to filter for all favorite art pieces
+- [x] Pass the list of all favorite art pieces via prop `pieces` to the `ArtPieces` component
 - [ ] All acceptance criteria marked with 🖼️ are covered by component testing
 
 ---
@@ -223,7 +223,7 @@ Download and extract the [Resources](#resources) into your project folder.
 
 #### Acceptance Criteria
 
-- [ ] The detail view has a list of comments for this art piece with the headline "Comments" 🖼️
+- [] The detail view has a list of comments for this art piece with the headline "Comments" 🖼️
 - [ ] Each comment's text is displayed 🖼️
 - [ ] Each comment's date and time is displayed 🖼️
 - [ ] The detail view has an input field to write a comment 🖼️
@@ -272,13 +272,13 @@ Download and extract the [Resources](#resources) into your project folder.
 
 #### Acceptance Criteria
 
-- [ ] The art piece detail page shows a list of all colors used in the image
+- [x] The art piece detail page shows a list of all colors used in the image
 - [ ] The colors may be displayed as circles, squares, ...
 
 #### Tasks
 
-- [ ] Pass the `colors` given by the API to the `ArtPieceDetails` component 🖼️
-- [ ] Use the color hex-code in a styled component to render an element with this color as background
+- [x] Pass the `colors` given by the API to the `ArtPieceDetails` component 🖼️
+- [x] Use the color hex-code in a styled component to render an element with this color as background
 - [ ] All acceptance criteria marked with 🖼️ are covered by component testing
 
 ---
