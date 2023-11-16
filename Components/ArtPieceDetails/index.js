@@ -1,6 +1,7 @@
 import Image from "next/image";
 import FavoriteButton from "../FavoriteButton";
 import Link from "next/link";
+import CommentForm from "../CommentForm";
 
 export default function ArtPieceDetails({
   image,
@@ -25,6 +26,7 @@ export default function ArtPieceDetails({
         onToggleFavorite={onToggleFavorite}
         slug={slug}
       />
+      <CommentForm />
     </>
   );
 }
