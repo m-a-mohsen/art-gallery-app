@@ -1,5 +1,6 @@
 import Image from "next/image";
 import ArtPiecesPreview from "../ArtPiecesPreview";
+import Link from "next/link";
 
 export default function ArtPieces({ pieces, artPiecesInfo, onToggleFavorite }) {
   return (
@@ -10,8 +11,6 @@ export default function ArtPieces({ pieces, artPiecesInfo, onToggleFavorite }) {
             title={piece.name}
             image={piece.imageSource}
             artist={piece.artist}
-            artPiecesInfo={artPiecesInfo}
-            onToggleFavorite={onToggleFavorite}
           />
         </li>
       ))}
