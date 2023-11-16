@@ -20,6 +20,8 @@ export default function ArtPiecesDetails() {
 
   return (
     <ArtPieceDetails
+      onToggleFavorite={onToggleFavorite}
+      artPiecesInfo={artPiecesInfo}
       image={imageSource}
       title={name}
       artist={artist}
