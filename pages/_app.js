@@ -15,7 +15,7 @@ export default function App({ Component, pageProps }) {
     fetcher
   );
 
-  const [artPiecesInfo, setArtPiecesInfo] = useLocalStorageState("artPices", {
+  const [artPiecesInfo, setArtPiecesInfo] = useLocalStorageState("artPieces", {
     defaultValue: [],
   });
 
