@@ -3,7 +3,7 @@ import FavoriteButton from "../FavoriteButton";
 import Link from "next/link";
 import CommentForm from "../CommentForm";
 import Comments from "../Comments";
-import { useState } from "react";
+import useLocalStorageState from "use-local-storage-state";
 
 export default function ArtPieceDetails({
   image,
@@ -16,11 +16,14 @@ export default function ArtPieceDetails({
   onToggleFavorite,
   colors,
 }) {
-  const [comments, setComments] = useState([]);
+  const [comments, setComments] = useLocalStorageState("comments", {
+    defaultValue: [],
+  });
 
   function handleAddComment(newComment) {
     setComments([...comments, newComment]);
   }
+
   return (
     <>
       <Image src={image} alt={title} width={312} height={312} />
