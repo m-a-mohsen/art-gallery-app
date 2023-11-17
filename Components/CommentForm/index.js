@@ -1,11 +1,12 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import { useState } from "react";
 
-export default function CommentForm({ onAddComment, comments }) {
+export default function CommentForm({ onAddComment }) {
   const [comment, setComment] = useState();
 
   function handleSubmit(event) {
     event.preventDefault();
+    event.target.reset();
 
     onAddComment(comment);
   }
@@ -19,15 +20,13 @@ export default function CommentForm({ onAddComment, comments }) {
         rows="4"
         cols="50"
         required
-      ></textarea>
-
-      <input
+        value={comment}
         onChange={(event) => {
           setComment(event.target.value);
         }}
-        type="submit"
-        value="Submit Comment"
-      ></input>
+      ></textarea>
+
+      <input type="submit" value="Submit Comment" />
     </form>
   );
 }

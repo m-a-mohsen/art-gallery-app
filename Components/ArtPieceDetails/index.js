@@ -2,6 +2,7 @@ import Image from "next/image";
 import FavoriteButton from "../FavoriteButton";
 import Link from "next/link";
 import CommentForm from "../CommentForm";
+import Comments from "../Comments";
 import { useState } from "react";
 
 export default function ArtPieceDetails({
@@ -13,12 +14,12 @@ export default function ArtPieceDetails({
   slug,
   artPiecesInfo,
   onToggleFavorite,
-  colors
+  colors,
 }) {
-  const [comments, setComments] = useState();
+  const [comments, setComments] = useState([]);
 
   function handleAddComment(newComment) {
-    setComments(newComment);
+    setComments([...comments, newComment]);
   }
   return (
     <>
@@ -28,6 +29,7 @@ export default function ArtPieceDetails({
       <div>{year}</div>
       <div>{genre}</div>
       {colors.map((color) => {
+        // eslint-disable-next-line react/jsx-key
         return <div style={{ backgroundColor: color }}>{color}</div>;
       })}
       <Link href="/art-pieces">Back to list</Link>
@@ -36,7 +38,8 @@ export default function ArtPieceDetails({
         onToggleFavorite={onToggleFavorite}
         slug={slug}
       />
-      <CommentForm comments={comments} onAddComment={handleAddComment} />
+      <CommentForm onAddComment={handleAddComment} />
+      <Comments comments={comments} />
     </>
   );
 }

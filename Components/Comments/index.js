@@ -1,11 +1,10 @@
-export default function Comments({ searchTerm }) {
-  const results = topics.filter((topic) => topic.includes(searchTerm));
-
+export default function Comments({ comments }) {
   return (
-    <ul>
-      {results.map((result) => (
-        <li key={result}>{result}</li>
+    <div>
+      <h2>Comments</h2>
+      {comments.map((comment, index) => (
+        <li key={index}>{comment}</li>
       ))}
-    </ul>
+    </div>
   );
 }
