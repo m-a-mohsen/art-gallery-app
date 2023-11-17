@@ -4,6 +4,8 @@ import GlobalStyle from "../styles";
 import useSWR from "swr";
 import Layout from "@/Components/Layout";
 import { useState } from "react";
+// import { useImmerLocalStorageState } from '../recources/lib/hook/useImmerLocalStorageState.js'
+import useLocalStorageState from 'use-local-storage-state'
 
 const fetcher = (url) => fetch(url).then((response) => response.json());
 
@@ -13,7 +15,7 @@ export default function App({ Component, pageProps }) {
     fetcher
   );
 
-  const [artPiecesInfo, setArtPiecesInfo] = useState([]);
+  const [artPiecesInfo, setArtPiecesInfo] = useLocalStorageState('artPices', { defaultValue: [] });
 
   function handleToggleFavorite(slug) {
     setArtPiecesInfo((artPiecesInfo) => {
