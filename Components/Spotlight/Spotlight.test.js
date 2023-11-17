@@ -3,15 +3,7 @@ import userEvent from "@testing-library/user-event";
 import Spotlight from ".";
 
 test("renders an image", () => {
-  render(
-    <Spotlight
-      image={[]}
-      artist={[]}
-      slug={[]}
-      artPiecesInfo={[]}
-      onToggleFavorite={[]}
-    />
-  );
+  render(<Spotlight slug={[]} artPiecesInfo={[]} onToggleFavorite={[]} />);
 
   const image = screen.getByRole("img");
   expect(image).toBeInTheDocument();
@@ -20,7 +12,6 @@ test("renders an image", () => {
 test("renders the name of the artist", () => {
   render(
     <Spotlight
-      image={[]}
       artist="artist"
       slug={[]}
       artPiecesInfo={[]}
