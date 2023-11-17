@@ -60,7 +60,7 @@ Download and extract the [Resources](#resources) into your project folder.
 - [x] `ArtPieces` props: `pieces`
 - [x] Create the component `ArtPiecePreview`
 - [x] `ArtPiecePreview` props: `image`, `title`, `artist`
-- [ ] All acceptance criteria marked with 🖼️ are covered by component testing
+- [x] All acceptance criteria marked with 🖼️ are covered by component testing
 
 ---
 
@@ -85,7 +85,7 @@ Download and extract the [Resources](#resources) into your project folder.
 - [x] Write function to pick one art piece [at random](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random#examples)
 - [x] Create the component `Spotlight`
 - [x] `Spotlight` props: `image`, `artist`
-- [ ] All acceptance criteria marked with 🖼️ are covered by component testing
+- [x] All acceptance criteria marked with 🖼️ are covered by component testing
 
 ---
 
