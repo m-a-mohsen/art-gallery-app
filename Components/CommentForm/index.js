@@ -1,4 +1,5 @@
 /* eslint-disable react-hooks/rules-of-hooks */
+
 import { useState } from "react";
 
 export default function CommentForm({ onAddComment }) {
@@ -6,9 +7,12 @@ export default function CommentForm({ onAddComment }) {
 
   function handleSubmit(event) {
     event.preventDefault();
-    event.target.reset();
 
     onAddComment(comment);
+    event.target.reset();
+    event.target.elements.comment.focus();
+
+    setComment("");
   }
 
   return (
