@@ -17,7 +17,7 @@ export default function CommentForm({ onAddComment }) {
 
   return (
     <form onSubmit={handleSubmit} method="post">
-      <label htmlFor="comment">Write your comment:</label>
+      <label htmlFor="comment">write your comment:</label>
       <textarea
         id="comment"
         name="comment"

@@ -2,7 +2,7 @@ import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import Spotlight from ".";
 
-test("renders a random image", () => {
+test("renders an image", () => {
   render(
     <Spotlight
       image={[]}
@@ -21,7 +21,7 @@ test("renders the name of the artist", () => {
   render(
     <Spotlight
       image={[]}
-      artist={[]}
+      artist="artist"
       slug={[]}
       artPiecesInfo={[]}
       onToggleFavorite={[]}
