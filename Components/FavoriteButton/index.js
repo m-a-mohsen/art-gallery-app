@@ -9,7 +9,7 @@ export default function FavoriteButton({
 
   return (
     <button type="button" onClick={() => onToggleFavorite(slug)}>
-      {isFav ? "Remove From Favorites" : "Add To Favorites"}
+      {isFav ? "Remove from Fravorites" : "Add to Favorites"}
     </button>
   );
 }
