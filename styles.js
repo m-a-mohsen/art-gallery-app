@@ -46,12 +46,12 @@ h1 {
 form {
   display: grid;
   gap: 5px;
+  justify-content: center;
 }
 
 footer {
   display: grid;
   justify-content: center;
   margin-top: 20px;
-
 }
 `;
