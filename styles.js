@@ -47,4 +47,11 @@ form {
   display: grid;
   gap: 5px;
 }
+
+footer {
+  display: grid;
+  justify-content: center;
+  margin-top: 20px;
+
+}
 `;

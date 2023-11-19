@@ -10,7 +10,9 @@ export default function Layout({ children }) {
       </header>
       <main>{children}</main>
       <footer>
-        <p>Gallery</p>
+        <p>
+          <small>art gallery app&copy; by Mahmoud and Ragna</small>
+        </p>
       </footer>
     </div>
   );

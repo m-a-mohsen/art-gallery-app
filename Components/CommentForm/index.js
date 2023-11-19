@@ -23,6 +23,7 @@ export default function CommentForm({ onAddComment }) {
         name="comment"
         rows="4"
         cols="50"
+        style={{ fontFamily: "system-ui", fontSize: "14px" }}
         required
         value={comment}
         onChange={(event) => {
