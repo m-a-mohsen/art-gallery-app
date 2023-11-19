@@ -3,6 +3,6 @@ import { Redirect } from '../lib/redirect'
 export default Redirect
 
 // to keep this root page with the defaultLocale
-// import Homepage, { getStaticProps } from './[locale]/index'
-// export default Homepage
+// import SecondPage, { getStaticProps } from './[locale]/second-page'
+// export default SecondPage
 // export { getStaticProps }

@@ -1,0 +1,12 @@
+{
+  "back-to-home": "العودة إلى المنزل",
+  "error-with-status": "أ {{statusCode}} حدث خطأ على الخادم",
+  "error-without-status": "حدث خطأ على الخادم",
+  "h1": "مثال بسيط",
+  "title": "الصفحة الرئيسية | ",
+  "to-second-page": "إلى الصفحة الثانية",
+  "gallery": "صالة عرض",
+  "pieces": "قِطَع",
+  "spotlight": "تسليط الضوء",
+  "favorites": "المفضلة",  "nofav": "لا توجد المفضلة"
+}

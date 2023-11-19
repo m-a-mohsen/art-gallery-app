@@ -1,5 +1,7 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import { ServerStyleSheet } from "styled-components";
+import i18nextConfig from '../next-i18next.config'
+import { useEffect, useState } from "react";
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -24,8 +26,23 @@ export default class MyDocument extends Document {
   }
 
   render() {
+    const currentLocale =
+      this.props.__NEXT_DATA__.query.locale ||
+      i18nextConfig.i18n.defaultLocale
+    console.log("props", this.props)
+
+    // const [dir, setDir] = useState('ltr')
+    //     useEffect(() => {
+    //       // Perform localStorage action
+    //       const dir = localStorage.getItem('i18nextLng') == 'ar' ? 'rtl' : ltr
+
+    //     }, [])
+    //     if (typeof window !== 'undefined') {
+    //       // Perform localStorage action
+    //       const dir = localStorage.getItem('i18nextLng') == 'ar' ? 'rtl' : ltr
+    // }
     return (
-      <Html lang="en">
+      <Html lang={currentLocale} dir={'auto'}>
         <Head />
         <body>
           <Main />

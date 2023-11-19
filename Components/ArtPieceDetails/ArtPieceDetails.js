@@ -1,5 +1,5 @@
 import Image from "next/image";
-import FavoriteButton from "../FavoriteButton";
+import FavoriteButton from "../FavoriteButton/FavoriteButton";
 import Link from "next/link";
 
 export default function ArtPieceDetails({

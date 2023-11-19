@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"name": "art-gallery-app",
+			"path": "."
+		},
+		{
+			"name": "ssg",
+			"path": "../../playground/ssg"
+		},
+		{
+			"path": "../../playground/simple"
+		}
+	],
+	"settings": {}
+}

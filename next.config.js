@@ -17,9 +17,9 @@ const nextConfig = {
 
     return config;
   },
-  images: {
-    domains: ["example-apis.vercel.app"],
-  },
+  // output: 'export',
+  // i18n,
+  trailingSlash: true,
 };
 
 module.exports = nextConfig;

@@ -2,14 +2,16 @@
 import { SWRConfig } from "swr";
 import GlobalStyle from "../styles";
 import useSWR from "swr";
-import Layout from "@/Components/Layout";
+import Layout from "@/Components/Layout/Layout";
 import { useState } from "react";
 // import { useImmerLocalStorageState } from '../recources/lib/hook/useImmerLocalStorageState.js'
 import useLocalStorageState from 'use-local-storage-state'
+import { appWithTranslation } from 'next-i18next'
+
 
 const fetcher = (url) => fetch(url).then((response) => response.json());
 
-export default function App({ Component, pageProps }) {
+const artApp = ({ Component, pageProps }) => {
   const { data, error, isLoading, mutate } = useSWR(
     "https://example-apis.vercel.app/api/art",
     fetcher
@@ -57,3 +59,5 @@ export default function App({ Component, pageProps }) {
     </>
   );
 }
+
+export default appWithTranslation(artApp)

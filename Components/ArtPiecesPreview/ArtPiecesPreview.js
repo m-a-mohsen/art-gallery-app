@@ -1,6 +1,8 @@
 import Image from "next/image";
-import FavoriteButton from "../FavoriteButton";
-import Link from "next/link";
+import FavoriteButton from "../FavoriteButton/FavoriteButton";
+import Link from "../../components/Link";
+// import Link from "next/link";
+import { getStaticPaths, makeStaticProps } from '../../lib/getStatic'
 
 export default function ArtPiecesPreview({
   image,
@@ -25,4 +27,20 @@ export default function ArtPiecesPreview({
       ></FavoriteButton>
     </>
   );
+}
+
+
+export { getStaticPaths }
+export const getStaticProps = async ctx => {
+  // some data fetched from anywhere...
+  const someOtherData = slug
+  return {
+    props: {
+      ...(await getI18nProps(ctx, [
+        'common',
+        'footer',
+      ])),
+      someOtherData,
+    },
+  }
 }

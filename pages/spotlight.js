@@ -1,27 +1,8 @@
-import Spotlight from "@/Components/Spotlight";
-import pickRandomItem from "@/utils/random";
-import { useState, useEffect } from "react";
+// to detect language and automatically redirect to the approprate/[locale] page
+import { Redirect } from '../lib/redirect'
+export default Redirect
 
-export default function SpotlightPage({
-  pieces,
-  artPiecesInfo,
-  onToggleFavorite,
-}) {
-  const [randomArt, setRandomArt] = useState(() => pickRandomItem(pieces));
-
-  useEffect(() => {
-    setRandomArt(pickRandomItem(pieces));
-  }, [pieces]);
-
-  return (
-    <main>
-      <Spotlight
-        image={randomArt.imageSource}
-        artist={randomArt.artist}
-        slug={randomArt.slug}
-        artPiecesInfo={artPiecesInfo}
-        onToggleFavorite={onToggleFavorite}
-      />
-    </main>
-  );
-}
+// to keep this root page with the defaultLocale
+// import Homepage, { getStaticProps } from './[locale]/index'
+// export default Homepage
+// export { getStaticProps }

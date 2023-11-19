@@ -1,0 +1,13 @@
+{
+  "back-to-home": "Zurück nach Hause",
+  "error-with-status": "A {{statusCode}} Auf dem Server ist ein Fehler aufgetreten",
+  "error-without-status": "Auf dem Server ist ein Fehler aufgetreten",
+  "h1": "Ein einfaches Beispiel",
+  "title": "Startseite | ",
+  "to-second-page": "Zur zweiten Seite",
+  "gallery": "Galerie",
+  "pieces": "Stücke",
+  "spotlight": "Scheinwerfer",
+  "favorites": "Favoriten",
+    "nofav": "Es gibt keine Favoriten"
+}
