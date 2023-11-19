@@ -4,10 +4,10 @@ export default function Navigation() {
   return (
     <ul>
       <li>
-        <Link href="/art-pieces">Pieces</Link>
+        <Link href="/spotlight">Spotlight</Link>
       </li>
       <li>
-        <Link href="/spotlight">Spotlight</Link>
+        <Link href="/art-pieces">Pieces</Link>
       </li>
       <li>
         <Link href="/favorites">Favorites</Link>

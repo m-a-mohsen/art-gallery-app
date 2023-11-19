@@ -12,11 +12,13 @@ export default function ArtPiecesPreview({
 }) {
   return (
     <>
-      <Link href={`/art-pieces/${slug}`}>
-        <Image src={image} alt={title} width={312} height={312} />
-      </Link>
-      <div>{title}</div>
-      <div>{artist}</div>
+      <div>
+        <Link href={`/art-pieces/${slug}`}>
+          <Image src={image} alt={title} width={312} height={312} />
+        </Link>
+        <div>{title}</div>
+        <div>{artist}</div>
+      </div>
 
       <FavoriteButton
         artPiecesInfo={artPiecesInfo}

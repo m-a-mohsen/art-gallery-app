@@ -11,4 +11,16 @@ export default createGlobalStyle`
     margin: 0;
     font-family: system-ui;
   }
+
+  main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+
+  button {
+    padding: 10px;
+  }
 `;

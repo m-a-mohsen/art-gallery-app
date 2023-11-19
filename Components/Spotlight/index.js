@@ -10,13 +10,15 @@ export default function Spotlight({
 }) {
   return (
     <>
-      <Image src={image} width={500} height={500} alt={artist} />
-      <h2>{artist}</h2>
-      <FavoriteButton
-        artPiecesInfo={artPiecesInfo}
-        onToggleFavorite={onToggleFavorite}
-        slug={slug}
-      ></FavoriteButton>
+      <div>
+        <Image src={image} width={500} height={500} alt={artist} />
+        <h2>{artist}</h2>
+        <FavoriteButton
+          artPiecesInfo={artPiecesInfo}
+          onToggleFavorite={onToggleFavorite}
+          slug={slug}
+        ></FavoriteButton>
+      </div>
     </>
   );
 }
