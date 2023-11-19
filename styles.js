@@ -22,5 +22,29 @@ export default createGlobalStyle`
 
   button {
     padding: 10px;
+    margin-top: 10px;
   }
+
+  ul {    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    gap: 10px;
+    justify-content: center;
+    padding: 30px;
+  }
+
+  li {
+    list-style-type: none;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  display: grid;
+  gap: 5px;
+}
 `;

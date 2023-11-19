@@ -19,7 +19,6 @@ export default function ArtPiecesPreview({
         <div>{title}</div>
         <div>{artist}</div>
       </div>
-
       <FavoriteButton
         artPiecesInfo={artPiecesInfo}
         onToggleFavorite={onToggleFavorite}
