@@ -10,6 +10,12 @@
 		},
 		{
 			"path": "../../playground/simple"
+		},
+		{
+			"path": "../../playground/next-intl/examples/example-pages-router"
+		},
+		{
+			"path": "../../playground/next-intl/examples/example-pages-router-advanced"
 		}
 	],
 	"settings": {}
