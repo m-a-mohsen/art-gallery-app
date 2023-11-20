@@ -1,5 +1,5 @@
-import Spotlight from "@/Components/Spotlight";
-import pickRandomItem from "@/utils/random";
+import Spotlight from "../Components/Spotlight";
+import pickRandomItem from "../utils/random";
 import { useState, useEffect } from "react";
 
 export default function SpotlightPage({
@@ -7,7 +7,7 @@ export default function SpotlightPage({
   artPiecesInfo,
   onToggleFavorite,
 }) {
-  const [randomArt, setRandomArt] = useState(() => pickRandomItem(pieces));
+  const [randomArt, setRandomArt] = useState({});
 
   useEffect(() => {
     setRandomArt(pickRandomItem(pieces));

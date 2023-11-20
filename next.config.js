@@ -1,10 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  i18n: {
+    locales: ['en', 'ar'],
+    defaultLocale: 'en',
+    localeDetection: false,
+  },
   compiler: {
     styledComponents: true,
   },
   reactStrictMode: true,
-  // reference :https://github.com/spiced-academy/lime-web-dev/blob/main/sessions/nextjs-basics-and-routing/nextjs-basics-and-routing.md
   images: {
     domains: ["example-apis.vercel.app"],
   },
@@ -17,9 +21,7 @@ const nextConfig = {
 
     return config;
   },
-  images: {
-    domains: ["example-apis.vercel.app"],
-  },
+
 };
 
 module.exports = nextConfig;

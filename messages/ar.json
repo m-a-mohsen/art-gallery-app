@@ -1,0 +1,13 @@
+{
+  "Index": {
+    "title": "الصفحة الرئيسية",
+    "description": "هذه هي الصفحة الرئيسية."
+  },
+  "LocaleSwitcher": {
+    "switchLocale": "قم بالتبديل إلى {locale, select, de {الألمانية} en {الإنجليزية} other {مجهول}}"
+  },
+  "PageLayout": {
+    "pageTitle": "التالي",
+    "artGallery": "معرض الفنون"
+  }
+}

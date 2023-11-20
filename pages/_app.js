@@ -2,12 +2,16 @@
 import { SWRConfig } from "swr";
 import GlobalStyle from "../styles";
 import useSWR from "swr";
-import Layout from "@/Components/Layout";
+import Layout from "../Components/Layout/index";
 import { useState } from "react";
+import { NextIntlClientProvider } from 'next-intl';
+import { useRouter } from 'next/router';
 
 const fetcher = (url) => fetch(url).then((response) => response.json());
 
 export default function App({ Component, pageProps }) {
+
+  const router = useRouter();
   const { data, error, isLoading, mutate } = useSWR(
     "https://example-apis.vercel.app/api/art",
     fetcher
@@ -34,24 +38,28 @@ export default function App({ Component, pageProps }) {
   if (error) return <div>failed to load</div>;
   if (isLoading) return <div>loading...</div>;
 
-  if (error) return <div>failed to load</div>;
-  if (isLoading) return <div>loading...</div>;
 
   console.log(artPiecesInfo);
 
   return (
     <>
-      <GlobalStyle />
-      <SWRConfig value={{ fetcher }}>
-        <Layout>
-          <Component
-            {...pageProps}
-            pieces={data}
-            artPiecesInfo={artPiecesInfo}
-            onToggleFavorite={handleToggleFavorite}
-          />
-        </Layout>
-      </SWRConfig>
+      <NextIntlClientProvider
+        locale={router.locale}
+        timeZone="Europe/Berlin"
+        messages={pageProps.messages}
+      >
+        <GlobalStyle />
+        <SWRConfig value={{ fetcher }}>
+          <Layout >
+            <Component
+              {...pageProps}
+              pieces={data}
+              artPiecesInfo={artPiecesInfo}
+              onToggleFavorite={handleToggleFavorite}
+            />
+          </Layout>
+        </SWRConfig>
+      </NextIntlClientProvider>
     </>
   );
 }

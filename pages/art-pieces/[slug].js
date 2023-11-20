@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import useSWR from "swr";
-import ArtPieceDetails from "@/Components/ArtPieceDetails";
+import ArtPieceDetails from "../../Components/ArtPieceDetails";
 import { useRouter } from "next/router";
 
 export default function ArtPiecesDetailsPage({
