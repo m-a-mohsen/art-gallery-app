@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import LocaleSwitcher from '../../components/locale-switcher'
+import LocaleSwitcher from '../../Components/locale-switcher'
 
 export default function GspPage(props) {
   const router = useRouter()
