@@ -1,4 +1,5 @@
 export default function Comments({ comments }) {
+  console.log(comments);
   return (
     <div>
       <h2>Comments</h2>
