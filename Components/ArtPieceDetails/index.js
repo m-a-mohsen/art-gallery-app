@@ -26,23 +26,28 @@ export default function ArtPieceDetails({
 
   return (
     <>
-      <Image src={image} alt={title} width={312} height={312} />
-      <div>{title}</div>
-      <div>{artist}</div>
-      <div>{year}</div>
-      <div>{genre}</div>
-      {colors.map((color) => {
-        // eslint-disable-next-line react/jsx-key
-        return <div style={{ backgroundColor: color }}>{color}</div>;
-      })}
-      <Link href="/art-pieces">Back to list</Link>
-      <FavoriteButton
-        artPiecesInfo={artPiecesInfo}
-        onToggleFavorite={onToggleFavorite}
-        slug={slug}
-      />
-      <CommentForm onAddComment={handleAddComment} />
-      <Comments comments={comments} />
+      <Link href="/art-pieces">← Back to List</Link>
+      <div>
+        <Image src={image} alt={title} width={312} height={312} />
+        <div>{title}</div>
+        <div>{artist}</div>
+        <div>{year}</div>
+        <div>{genre}</div>
+        {colors.map((color) => {
+          // eslint-disable-next-line react/jsx-key
+          return <div style={{ backgroundColor: color }}>{color}</div>;
+        })}
+
+        <FavoriteButton
+          artPiecesInfo={artPiecesInfo}
+          onToggleFavorite={onToggleFavorite}
+          slug={slug}
+        />
+      </div>
+      <div>
+        <CommentForm onAddComment={handleAddComment} />
+        <Comments comments={comments} />
+      </div>
     </>
   );
 }

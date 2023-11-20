@@ -5,12 +5,14 @@ export default function Layout({ children }) {
   return (
     <div>
       <header>
-        <h1>GALLERY</h1>
+        <h1>G A L L E R Y</h1>
         <Navigation />
       </header>
       <main>{children}</main>
       <footer>
-        <p>Gallery</p>
+        <p>
+          <small>art gallery app&copy; by Mahmoud and Ragna</small>
+        </p>
       </footer>
     </div>
   );
