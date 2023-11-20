@@ -1,6 +1,6 @@
 import Image from "next/image";
 import ArtPiecesPreview from "../ArtPiecesPreview/ArtPiecesPreview";
-import Link from "../../components/Link";
+import Link from "../../Components/Link";
 // import Link from "next/link";
 
 export default function ArtPieces({ pieces, artPiecesInfo, onToggleFavorite }) {

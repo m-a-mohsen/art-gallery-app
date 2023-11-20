@@ -1,4 +1,4 @@
-import Link from '../../components/Link'
+import Link from '../../Components/Link'
 
 import { useTranslation } from 'next-i18next'
 import {
@@ -6,8 +6,8 @@ import {
   getI18nProps,
 } from '../../lib/getStatic'
 
-import { Header } from '../../components/Header'
-import { Footer } from '../../components/Footer'
+import { Header } from '../../Components/Header'
+import { Footer } from '../../Components/Footer'
 
 const SecondPage = ({ someOtherData }) => {
   const { t } = useTranslation(['second-page', 'common', 'footer'])

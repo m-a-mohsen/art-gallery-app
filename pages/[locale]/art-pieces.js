@@ -1,7 +1,7 @@
 import ArtPieces from "@/Components/ArtPieces/ArtPieces";
 import { useTranslation } from 'next-i18next'
 import { getStaticPaths, makeStaticProps } from '../../lib/getStatic'
-import { Header } from '../../components/Header'
+import { Header } from '../../Components/Header'
 
 export default function ArtPiecesPage({
   onToggleFavorite,

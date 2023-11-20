@@ -1,5 +1,5 @@
 import Spotlight from "@/Components/Spotlight/Spotlight";
-import { Header } from '../../components/Header'
+import { Header } from '../../Components/Header'
 import pickRandomItem from "@/utils/random";
 import { useState, useEffect } from "react";
 import { useTranslation } from 'next-i18next'

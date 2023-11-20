@@ -1,10 +1,10 @@
 import { useTranslation } from 'next-i18next'
 import { getStaticPaths, makeStaticProps } from '../../lib/getStatic'
 
-import { Header } from '../../components/Header'
-import { Footer } from '../../components/Footer'
+import { Header } from '../../Components/Header'
+import { Footer } from '../../Components/Footer'
 
-import Link from '../../components/Link'
+import Link from '../../Components/Link'
 
 const Homepage = () => {
   const { t } = useTranslation(['common', 'footer'])

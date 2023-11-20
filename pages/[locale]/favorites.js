@@ -3,7 +3,7 @@ import useSWR from "swr";
 import { useTranslation } from 'next-i18next'
 import { getStaticPaths, makeStaticProps } from '../../lib/getStatic'
 
-import { Header } from '../../components/Header'
+import { Header } from '../../Components/Header'
 export default function Favorites({ pieces, artPiecesInfo, onToggleFavorite }) {
   // const fetcher = (url) => fetch(url).then((response) => response.json());
   //   const { data, error, isLoading, mutate } = useSWR(

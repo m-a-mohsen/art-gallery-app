@@ -1,6 +1,6 @@
 import Image from "next/image";
 import FavoriteButton from "../FavoriteButton/FavoriteButton";
-import Link from "../../components/Link";
+import Link from "../../Components/Link";
 // import Link from "next/link";
 import { getStaticPaths, makeStaticProps } from '../../lib/getStatic'
 
