@@ -4,6 +4,7 @@ import Link from "next/link";
 import CommentForm from "../CommentForm";
 import Comments from "../Comments";
 import useLocalStorageState from "use-local-storage-state";
+import { uid } from "uid";
 
 export default function ArtPieceDetails({
   image,
@@ -21,7 +22,7 @@ export default function ArtPieceDetails({
   });
 
   function handleAddComment(newComment) {
-    setComments([...comments, newComment]);
+    setComments([...comments, { ...newComment, slug }]);
   }
 
   return (
@@ -46,7 +47,7 @@ export default function ArtPieceDetails({
       </div>
       <div>
         <CommentForm onAddComment={handleAddComment} />
-        <Comments comments={comments} />
+        <Comments comments={comments} slug={slug} />
       </div>
     </>
   );

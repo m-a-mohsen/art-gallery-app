@@ -3,16 +3,14 @@
 import { useState } from "react";
 
 export default function CommentForm({ onAddComment }) {
-  const [comment, setComment] = useState();
-
   function handleSubmit(event) {
     event.preventDefault();
+    const formData = new FormData(event.target);
+    const data = Object.fromEntries(formData);
 
-    onAddComment(comment);
+    onAddComment(data);
     event.target.reset();
     event.target.elements.comment.focus();
-
-    setComment("");
   }
 
   return (
@@ -25,12 +23,7 @@ export default function CommentForm({ onAddComment }) {
         cols="50"
         style={{ fontFamily: "system-ui", fontSize: "14px" }}
         required
-        value={comment}
-        onChange={(event) => {
-          setComment(event.target.value);
-        }}
       ></textarea>
-
       <input type="submit" value="Submit Comment" />
     </form>
   );
